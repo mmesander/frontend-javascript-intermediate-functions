@@ -48,6 +48,8 @@ console.log(" ")
 // cumLaude([6, 4, 5]) geeft 0
 // cumLaude([8, 9, 4, 6, 10]) geeft 3
 
+console.log("Opdracht 2:");
+console.log("----------------------");
 
 function cumLaude (gradesArray) {
     let numberOfStudents = 0
@@ -59,8 +61,10 @@ function cumLaude (gradesArray) {
     return numberOfStudents
 }
 
-const students = cumLaude("9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6")
+console.log(cumLaude(grades))
 
+console.log("----------------------");
+console.log(" ")
 
 /* Opdracht  2: Gemiddeld cijfer */
 
