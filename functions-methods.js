@@ -20,23 +20,18 @@ console.log("Opdracht 1:");
 console.log("----------------------");
 
 function getEmailDomain(email){
-    const indexNumber = email.indexOf("@")
-    const domain = email.substring(indexNumber + 1)
-    return domain
+    const indexNumber = email.indexOf("@");
+    const domain = email.substring(indexNumber + 1);
+    return domain;
 }
 
-const domainResult01 = getEmailDomain("n.eeken@novi-education.nl")
-const domainResult02 = getEmailDomain("t.mellink@novi.nl")
-const domainResult03 = getEmailDomain("a.wiersma@outlook.com")
-const domainResult04 = getEmailDomain("jij@debestenakijker.nl")
-
-console.log(domainResult01)
-console.log(domainResult02)
-console.log(domainResult03)
-console.log(domainResult04)
+console.log(getEmailDomain("n.eeken@novi-education.nl"));
+console.log(getEmailDomain("t.mellink@novi.nl"));
+console.log(getEmailDomain("a.wiersma@outlook.com"));
+console.log(getEmailDomain("jij@debestenakijker.nl"));
 
 console.log("----------------------");
-console.log(" ")
+console.log(" ");
 
 /* Opdracht  2 */
 // Schrijf een functie genaamd typeOfEmail, die een emailadres verwacht. De functie checkt of het emailadres een novi domein heeft (medewerker), een novi-education domein (student), of extern domein (zoals gmail of outlook)
@@ -57,29 +52,29 @@ console.log("Opdracht 2:");
 console.log("----------------------");
 
 function typeOfEmail(email) {
-    const indexNumber = email.indexOf("@")
-    const domain = email.substring(indexNumber + 1).toLowerCase()
+    const indexNumber = email.indexOf("@");
+    const domain = email.substring(indexNumber + 1).toLowerCase();
     if (domain === "novi-education.nl") {
-        return "Student"
+        return "Student";
     } else if (domain === "novi.nl") {
-        return "Medewerker"
+        return "Medewerker";
     } else {
-        return "Extern"
+        return "Extern";
     }
 }
 
-const emailResult01 = typeOfEmail("n.eeken@novi-education.nl")
-const emailResult02 = typeOfEmail("t.mellink@novi.nl")
-const emailResult03 = typeOfEmail("novi.nlaapjesk@outlook.com")
-const emailResult04 = typeOfEmail("a.wiersma@outlook.com")
+const emailResult01 = typeOfEmail("n.eeken@novi-education.nl");
+const emailResult02 = typeOfEmail("t.mellink@novi.nl");
+const emailResult03 = typeOfEmail("novi.nlaapjesk@outlook.com");
+const emailResult04 = typeOfEmail("a.wiersma@outlook.com");
 
-console.log(emailResult01)
-console.log(emailResult02)
-console.log(emailResult03)
-console.log(emailResult04)
+console.log(emailResult01);
+console.log(emailResult02);
+console.log(emailResult03);
+console.log(emailResult04);
 
 console.log("----------------------");
-console.log(" ")
+console.log(" ");
 
 /* Opdracht  3 */
 // Schrijf een functie genaamd checkEmailValidity, die een emailadres verwacht en checkt of het emailadres valide is. De functie returned true of false, afhankelijk van de uitkomst.
@@ -105,29 +100,29 @@ console.log("Opdracht 3:");
 console.log("----------------------");
 
 function checkEmailValidity(email) {
-    const checkSymbol01 = email.includes("@")
-    const checkSymbol02 = email.includes(",")
-    const emailLength = email.length
-    const lastIndex = email.substring(emailLength - 1)
+    const checkSymbol01 = email.includes("@");
+    const checkSymbol02 = email.includes(",");
+    const emailLength = email.length;
+    const lastIndex = email.substring(emailLength - 1);
     if (checkSymbol01 === true && checkSymbol02 === false && lastIndex !== ".") {
-        return true
+        return true;
     } else {
-        return false
+        return false;
     }
 }
 
-const checkEmail01 = checkEmailValidity("n.eeken@novi.nl")
-const checkEmail02 = checkEmailValidity("tessmellink@novi.nl")
-const checkEmail03 = checkEmailValidity("n.eekenanovi.nl")
-const checkEmail04 = checkEmailValidity("n.eeken@novinl.")
-const checkEmail05 = checkEmailValidity("tessmellink@novi,nl")
+const checkEmail01 = checkEmailValidity("n.eeken@novi.nl");
+const checkEmail02 = checkEmailValidity("tessmellink@novi.nl");
+const checkEmail03 = checkEmailValidity("n.eekenanovi.nl");
+const checkEmail04 = checkEmailValidity("n.eeken@novinl.");
+const checkEmail05 = checkEmailValidity("tessmellink@novi,nl");
 
-console.log(checkEmail01)
-console.log(checkEmail02)
-console.log(checkEmail03)
-console.log(checkEmail04)
-console.log(checkEmail05)
+console.log(checkEmail01);
+console.log(checkEmail02);
+console.log(checkEmail03);
+console.log(checkEmail04);
+console.log(checkEmail05);
 
 
 console.log("----------------------");
-console.log(" ")
+console.log(" ");
