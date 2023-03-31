@@ -110,9 +110,9 @@ function checkEmailValidity(email) {
     const emailLength = email.length
     const lastIndex = email.substring(emailLength - 1)
     if (checkSymbol01 === true && checkSymbol02 === false && lastIndex !== ".") {
-        return "true"
+        return true
     } else {
-        return "false"
+        return false
     }
 }
 
@@ -127,6 +127,7 @@ console.log(checkEmail02)
 console.log(checkEmail03)
 console.log(checkEmail04)
 console.log(checkEmail05)
+
 
 console.log("----------------------");
 console.log(" ")

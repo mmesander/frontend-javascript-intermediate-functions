@@ -16,6 +16,27 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
 // ---- Verwachte uitkomst: 6
 
+//-----------------PLAN VAN AANPAK-----------------//
+//[] Er moet een variabele gemaakt worden met het aantal cum laude studenten (een lege variabele)
+//[] Er moet middels een loop gecheckt worden welke waarde hoger is dan 8
+//[] elke keer als er aan de conditie wordt voldaan moet er 1 opgeteld worden bij de variable
+//[] de variabele moet gelogd worden voor het totaal aantal cum laude studenten
+
+console.log("Opdracht 1:");
+console.log("----------------------");
+
+let cumLaudeStudents01 = 0
+
+for (let i = 0; i < grades.length; i++) {
+    if (grades[i] >= 8) {
+        cumLaudeStudents01++
+    }
+}
+
+console.log(cumLaudeStudents01)
+
+console.log("----------------------");
+console.log(" ")
 
 /*  1b: Omschrijven tot een herbruikbare functie   */
 // Schrijf een functie genaamd cumLaude, die een array van cijfers verwacht (zoals grades) en het aantal Cum laude studenten teruggeeft. Gebruik hiervoor jouw antwoord van 1a.
@@ -28,6 +49,17 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // cumLaude([8, 9, 4, 6, 10]) geeft 3
 
 
+function cumLaude (gradesArray) {
+    let numberOfStudents = 0
+    for (let i = 0; i < gradesArray.length; i++) {
+        if (gradesArray[i] >= 8) {
+            numberOfStudents++
+        }
+    }
+    return numberOfStudents
+}
+
+const students = cumLaude("9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6")
 
 
 /* Opdracht  2: Gemiddeld cijfer */
