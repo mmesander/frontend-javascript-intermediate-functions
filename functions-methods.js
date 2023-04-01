@@ -63,15 +63,10 @@ function typeOfEmail(email) {
     }
 }
 
-const emailResult01 = typeOfEmail("n.eeken@novi-education.nl");
-const emailResult02 = typeOfEmail("t.mellink@novi.nl");
-const emailResult03 = typeOfEmail("novi.nlaapjesk@outlook.com");
-const emailResult04 = typeOfEmail("a.wiersma@outlook.com");
-
-console.log(emailResult01);
-console.log(emailResult02);
-console.log(emailResult03);
-console.log(emailResult04);
+console.log(typeOfEmail("n.eeken@novi-education.nl"));
+console.log(typeOfEmail("t.mellink@novi.nl"));
+console.log(typeOfEmail("novi.nlaapjesk@outlook.com"));
+console.log(typeOfEmail("a.wiersma@outlook.com");
 
 console.log("----------------------");
 console.log(" ");
@@ -111,18 +106,11 @@ function checkEmailValidity(email) {
     }
 }
 
-const checkEmail01 = checkEmailValidity("n.eeken@novi.nl");
-const checkEmail02 = checkEmailValidity("tessmellink@novi.nl");
-const checkEmail03 = checkEmailValidity("n.eekenanovi.nl");
-const checkEmail04 = checkEmailValidity("n.eeken@novinl.");
-const checkEmail05 = checkEmailValidity("tessmellink@novi,nl");
-
-console.log(checkEmail01);
-console.log(checkEmail02);
-console.log(checkEmail03);
-console.log(checkEmail04);
-console.log(checkEmail05);
-
+console.log(checkEmailValidity("n.eeken@novi.nl"));
+console.log(checkEmailValidity("tessmellink@novi.nl"));
+console.log(checkEmailValidity("n.eekenanovi.nl"));
+console.log(checkEmailValidity("n.eeken@novinl."));
+console.log(checkEmailValidity("tessmellink@novi,nl"));
 
 console.log("----------------------");
 console.log(" ");
