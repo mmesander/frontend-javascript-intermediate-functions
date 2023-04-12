@@ -89,7 +89,7 @@ console.log("----------------------");
 
 let totalGrades = 0;
 for (let i = 0; i < grades.length; i++) {
-    totalGrades = totalGrades + grades[i];
+    totalGrades += grades[i];
 }
 
 console.log(totalGrades / grades.length);
